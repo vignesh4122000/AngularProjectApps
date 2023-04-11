@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" />
+    <script>
+      images = [
+        "halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg",
+        "images (1).jpg",
+        "images (2).jpg",
+        "images (3).jpg",
+        "images (4).jpg",
+        "images (5).jpg",
+        "images.jpg",
+      ];
+      let index = 0;
+      setInterval(function () {
+        document.getElementById("image").src = images[index];
+        if (index < images.length) index++;
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="img">
+      <centre>
+        <img
+          id="image"
+          src="halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg"
+          alt="image"
+          height="500px"
+          width="500px"
+        />
+      </centre>
+    </div>
+    <!-- <img id="image" src="halo-of-neon-ring-illuminated-in-the-stunning-landscape-of-yosemite.jpg" alt="image">    -->
+  </body>
+</html>
